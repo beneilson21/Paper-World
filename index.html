@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Paper World</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins', sans-serif;
+}
+
+body{
+    background:#f4f6f9;
+}
+
+/* NAVBAR */
+nav{
+    background:linear-gradient(90deg,#020c1b,#061d3a);
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px 60px;
+    color:#fff;
+    flex-wrap:wrap;
+}
+
+.logo{
+    font-size:28px;
+    font-weight:700;
+}
+
+.logo span{
+    color:#1e90ff;
+}
+
+.menu{
+    display:flex;
+    gap:30px;
+    flex-wrap:wrap;
+}
+
+.menu a{
+    color:#ccc;
+    text-decoration:none;
+    font-size:14px;
+}
+
+.menu a:hover{
+    color:#1e90ff;
+}
+
+.whatsapp-btn{
+    background:#25d366;
+    padding:10px 20px;
+    border-radius:8px;
+    color:#fff;
+    text-decoration:none;
+    font-weight:600;
+}
+
+/* HERO */
+.hero{
+    display:flex;
+    min-height:90vh;
+}
+
+/* 🔥 GRADIENTE MELHORADO */
+.hero-left{
+    flex:1;
+    background:linear-gradient(90deg,#061d3a 50%, rgba(6,29,58,0.6) 75%, transparent);
+    color:#fff;
+    padding:80px 60px;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+}
+
+.hero-left h1{
+    font-size:48px;
+    line-height:1.2;
+}
+
+.hero-left h1 span{
+    color:#1e90ff;
+}
+
+.hero-left p{
+    margin:20px 0;
+    color:#ccc;
+}
+
+.buttons{
+    display:flex;
+    gap:20px;
+    margin-top:20px;
+    flex-wrap:wrap;
+}
+
+.btn{
+    padding:15px 25px;
+    border-radius:8px;
+    text-decoration:none;
+    font-weight:600;
+}
+
+.btn-primary{
+    background:#1e90ff;
+    color:#fff;
+}
+
+.btn-outline{
+    border:1px solid #fff;
+    color:#fff;
+}
+
+/* 🔥 IMAGEM CORRIGIDA */
+.hero-right{
+    flex:1;
+    background: url('./img/imagem.png') center/cover no-repeat;
+}
+
+/* SERVICES */
+.services{
+    padding:60px;
+    text-align:center;
+}
+
+.services h2{
+    font-size:30px;
+    margin-bottom:40px;
+}
+
+.cards{
+    display:flex;
+    gap:20px;
+    justify-content:center;
+    flex-wrap:wrap;
+}
+
+.card{
+    background:#fff;
+    padding:30px;
+    border-radius:12px;
+    width:200px;
+    box-shadow:0 5px 20px rgba(0,0,0,0.05);
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-5px);
+}
+
+.card h3{
+    margin:15px 0;
+}
+
+/* FOOTER INFO */
+.info{
+    background:#061d3a;
+    color:#fff;
+    display:flex;
+    justify-content:space-around;
+    padding:40px;
+    margin-top:40px;
+    flex-wrap:wrap;
+    gap:20px;
+}
+
+.info div{
+    text-align:center;
+}
+
+/* RESPONSIVO */
+@media(max-width:900px){
+    .hero{
+        flex-direction:column;
+    }
+
+    .hero-left{
+        padding:40px;
+    }
+
+    nav{
+        flex-direction:column;
+        gap:10px;
+    }
+
+    .hero-left h1{
+        font-size:32px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+    <div class="logo">Paper <span>World</span></div>
+
+    <div class="menu">
+        <a href="#">INÍCIO</a>
+        <a href="#">SERVIÇOS</a>
+        <a href="#">PRODUTOS</a>
+        <a href="#">DESIGN</a>
+        <a href="#">SOBRE</a>
+        <a href="#">CONTATO</a>
+    </div>
+
+    <a href="https://wa.me/5599999999999" class="whatsapp-btn">WHATSAPP</a>
+</nav>
+
+<section class="hero">
+
+    <div class="hero-left">
+        <h1>TUDO QUE VOCÊ PRECISA,<br><span>EM UM SÓ LUGAR!</span></h1>
+
+        <p>
+        Serviços de qualidade, materiais escolares e design profissional.<br>
+        Rapidez, praticidade e o melhor atendimento para você.
+        </p>
+
+        <div class="buttons">
+            <a href="https://wa.me/5599999999999" class="btn btn-primary">CHAMAR NO WHATSAPP</a>
+            <a href="#" class="btn btn-outline">SOLICITAR ORÇAMENTO</a>
+        </div>
+    </div>
+
+    <div class="hero-right"></div>
+
+</section>
+
+<section class="services">
+    <h2>Soluções completas para o seu dia a dia</h2>
+
+    <div class="cards">
+        <div class="card">
+            <h3>Xerox</h3>
+            <p>Cópias rápidas e de qualidade.</p>
+        </div>
+
+        <div class="card">
+            <h3>Impressões</h3>
+            <p>Colorido e preto & branco.</p>
+        </div>
+
+        <div class="card">
+            <h3>Digitalização</h3>
+            <p>Documentos com segurança.</p>
+        </div>
+
+        <div class="card">
+            <h3>Design</h3>
+            <p>Artes e materiais gráficos.</p>
+        </div>
+
+        <div class="card">
+            <h3>Papelaria</h3>
+            <p>Itens escolares e escritório.</p>
+        </div>
+    </div>
+</section>
+
+<section class="info">
+    <div>
+        <h4>Atendimento rápido</h4>
+        <p>Sem complicação</p>
+    </div>
+
+    <div>
+        <h4>Qualidade</h4>
+        <p>Você pode confiar</p>
+    </div>
+
+    <div>
+        <h4>Tudo em um só lugar</h4>
+        <p>Mais praticidade</p>
+    </div>
+</section>
+
+</body>
+</html>
